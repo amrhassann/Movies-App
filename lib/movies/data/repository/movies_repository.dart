@@ -45,8 +45,6 @@ class MoviesRepository extends BaseMoviesRepository{
     }on ServerException catch(failure){
       return Left(ServerFailure(errorMessageModel: failure.errorMessageModel));
     }
-    // TODO: implement getTopRatedMovies
-    throw UnimplementedError();
   }
 
 
